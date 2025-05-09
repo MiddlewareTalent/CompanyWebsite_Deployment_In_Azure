@@ -11,7 +11,7 @@ public class WebConfig implements WebMvcConfigurer { // // Implements WebMvcConf
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**") // Allow all paths
-                .allowedOrigins("https://middlewaretalents.com, https://www.middlewaretalents.com") // Allow requests from your frontend
+                .allowedOrigins("https://middlewaretalent.azurewebsites.net") // Allow requests from your frontend
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS") // Allowed methods
                 .allowCredentials(true); // Allow credentials (if needed)
     }
