@@ -19,7 +19,7 @@ public class WwwRedirectFilter implements Filter {
 
         String host = req.getHeader("host");
 
-        if ("talentflow-hr.com/".equalsIgnoreCase(host)) {
+        if ("talentflow-hr.com".equalsIgnoreCase(host)) {
             String redirectURL = "https://www.talentflow-hr.com" + req.getRequestURI();
             if (req.getQueryString() != null) {
                 redirectURL += "?" + req.getQueryString();
