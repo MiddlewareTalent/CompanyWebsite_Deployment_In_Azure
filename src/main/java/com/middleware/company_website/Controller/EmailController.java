@@ -28,7 +28,7 @@ public class EmailController {
 
     @PostMapping("/getInTouch")
     public String submitGetInTouch(@RequestBody GetInTouch getInTouch) {
-        emailService.sendGetInTouchRequest("ksekhar@middlewaretalents.com", getInTouch);
+        emailService.sendGetInTouchRequest("info@talentflow-hr.com", getInTouch);
         // emailService.sendGetInTouchRequest("marketing@middlewaretalents.com", getInTouch);
         return "Get in-touch request submitted successfully!";
     }
