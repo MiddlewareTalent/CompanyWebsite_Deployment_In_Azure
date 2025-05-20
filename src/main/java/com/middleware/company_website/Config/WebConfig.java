@@ -11,7 +11,7 @@ public class WebConfig implements WebMvcConfigurer { // // Implements WebMvcConf
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**") // Allow all paths
-                .allowedOrigins("https://talentflow-hr.com, https://www.talentflow-hr.com") // Allow requests from your frontend
+                .allowedOrigins("https://talentflow-hr.com, https://www.talentflow-hr.com, http://localhost:8081") // Allow requests from your frontend
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS") // Allowed methods
                 .allowCredentials(true); // Allow credentials (if needed)
     }
