@@ -27,6 +27,8 @@ public class WwwRedirectFilter implements Filter {
 
             res.setStatus(HttpServletResponse.SC_MOVED_PERMANENTLY);
             res.setHeader("Location", redirectURL);
+            return;
+            
         } else {
             chain.doFilter(request, response);
         }
